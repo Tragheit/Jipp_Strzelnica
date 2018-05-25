@@ -15,21 +15,58 @@ namespace Jipp_Strzelnica
         public Form1()
         {
             InitializeComponent();
+            home1.BringToFront();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void HomeButtonClick(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
+            player.Play();
 
+            home1.BringToFront();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BronieButton_Click(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
+            player.Play();
+        }
 
+        private void StanowiskaButton_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
+            player.Play();
+        }
+
+        private void TrenerzyButton_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
+            player.Play();
+        }
+
+        private void KarnetyButton_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
+            player.Play();
+        }
+
+        private void OnasButton_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
+            player.Play();
+
+            oNas1.BringToFront();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
+            player.Play();
+        }
 
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

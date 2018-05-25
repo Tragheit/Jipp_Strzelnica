@@ -30,15 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ONasButton = new System.Windows.Forms.Button();
+            this.KarnetyButton = new System.Windows.Forms.Button();
+            this.TrenerzyButton = new System.Windows.Forms.Button();
+            this.StanowiskaButton = new System.Windows.Forms.Button();
+            this.BronieButton = new System.Windows.Forms.Button();
+            this.HomeButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Exit = new System.Windows.Forms.Button();
+            this.home1 = new Jipp_Strzelnica.Home();
+            this.oNas1 = new Jipp_Strzelnica.ONas();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,21 +51,111 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(86)))));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.ONasButton);
+            this.panel1.Controls.Add(this.KarnetyButton);
+            this.panel1.Controls.Add(this.TrenerzyButton);
+            this.panel1.Controls.Add(this.StanowiskaButton);
+            this.panel1.Controls.Add(this.BronieButton);
+            this.panel1.Controls.Add(this.HomeButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(225, 586);
             this.panel1.TabIndex = 0;
             // 
+            // ONasButton
+            // 
+            this.ONasButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ONasButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ONasButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
+            this.ONasButton.Image = ((System.Drawing.Image)(resources.GetObject("ONasButton.Image")));
+            this.ONasButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ONasButton.Location = new System.Drawing.Point(0, 529);
+            this.ONasButton.Name = "ONasButton";
+            this.ONasButton.Size = new System.Drawing.Size(225, 45);
+            this.ONasButton.TabIndex = 10;
+            this.ONasButton.Text = " O nas";
+            this.ONasButton.UseVisualStyleBackColor = true;
+            this.ONasButton.Click += new System.EventHandler(this.OnasButton_Click);
+            // 
+            // KarnetyButton
+            // 
+            this.KarnetyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KarnetyButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.KarnetyButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
+            this.KarnetyButton.Image = ((System.Drawing.Image)(resources.GetObject("KarnetyButton.Image")));
+            this.KarnetyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.KarnetyButton.Location = new System.Drawing.Point(0, 316);
+            this.KarnetyButton.Name = "KarnetyButton";
+            this.KarnetyButton.Size = new System.Drawing.Size(225, 45);
+            this.KarnetyButton.TabIndex = 9;
+            this.KarnetyButton.Text = "  Karnety";
+            this.KarnetyButton.UseVisualStyleBackColor = true;
+            this.KarnetyButton.Click += new System.EventHandler(this.KarnetyButton_Click);
+            // 
+            // TrenerzyButton
+            // 
+            this.TrenerzyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TrenerzyButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.TrenerzyButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
+            this.TrenerzyButton.Image = ((System.Drawing.Image)(resources.GetObject("TrenerzyButton.Image")));
+            this.TrenerzyButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TrenerzyButton.Location = new System.Drawing.Point(0, 265);
+            this.TrenerzyButton.Name = "TrenerzyButton";
+            this.TrenerzyButton.Size = new System.Drawing.Size(225, 45);
+            this.TrenerzyButton.TabIndex = 8;
+            this.TrenerzyButton.Text = " Trenerzy";
+            this.TrenerzyButton.UseVisualStyleBackColor = true;
+            this.TrenerzyButton.Click += new System.EventHandler(this.TrenerzyButton_Click);
+            // 
+            // StanowiskaButton
+            // 
+            this.StanowiskaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StanowiskaButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.StanowiskaButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
+            this.StanowiskaButton.Image = ((System.Drawing.Image)(resources.GetObject("StanowiskaButton.Image")));
+            this.StanowiskaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.StanowiskaButton.Location = new System.Drawing.Point(-3, 214);
+            this.StanowiskaButton.Name = "StanowiskaButton";
+            this.StanowiskaButton.Size = new System.Drawing.Size(228, 45);
+            this.StanowiskaButton.TabIndex = 7;
+            this.StanowiskaButton.Text = "    Stanowiska";
+            this.StanowiskaButton.UseVisualStyleBackColor = true;
+            this.StanowiskaButton.Click += new System.EventHandler(this.StanowiskaButton_Click);
+            // 
+            // BronieButton
+            // 
+            this.BronieButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BronieButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BronieButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
+            this.BronieButton.Image = ((System.Drawing.Image)(resources.GetObject("BronieButton.Image")));
+            this.BronieButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BronieButton.Location = new System.Drawing.Point(0, 163);
+            this.BronieButton.Name = "BronieButton";
+            this.BronieButton.Size = new System.Drawing.Size(225, 45);
+            this.BronieButton.TabIndex = 6;
+            this.BronieButton.Text = " Bronie";
+            this.BronieButton.UseVisualStyleBackColor = true;
+            this.BronieButton.Click += new System.EventHandler(this.BronieButton_Click);
+            // 
+            // HomeButton
+            // 
+            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeButton.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.HomeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
+            this.HomeButton.Image = ((System.Drawing.Image)(resources.GetObject("HomeButton.Image")));
+            this.HomeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeButton.Location = new System.Drawing.Point(0, 112);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(225, 45);
+            this.HomeButton.TabIndex = 5;
+            this.HomeButton.Text = " Home";
+            this.HomeButton.UseVisualStyleBackColor = true;
+            this.HomeButton.Click += new System.EventHandler(this.HomeButtonClick);
+            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(161)))), ((int)(((byte)(113)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(120)))), ((int)(((byte)(78)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(225, 0);
             this.panel2.Name = "panel2";
@@ -70,26 +164,12 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(161)))), ((int)(((byte)(113)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(120)))), ((int)(((byte)(78)))));
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(262, 6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(100, 100);
             this.panel3.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 45);
-            this.button1.TabIndex = 5;
-            this.button1.Text = " Home";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -101,84 +181,59 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // label1
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 45);
-            this.button2.TabIndex = 6;
-            this.button2.Text = " Bronie";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(71)))), ((int)(((byte)(86)))));
+            this.label1.Location = new System.Drawing.Point(381, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(422, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Najlepsza Strzelnica w Twoim Mieście";
             // 
-            // button3
+            // Exit
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-3, 214);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(228, 45);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "    Stanowiska";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Exit.FlatAppearance.BorderSize = 0;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Exit.Image = ((System.Drawing.Image)(resources.GetObject("Exit.Image")));
+            this.Exit.Location = new System.Drawing.Point(1098, 23);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(44, 44);
+            this.Exit.TabIndex = 4;
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // button4
+            // home1
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 265);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(225, 45);
-            this.button4.TabIndex = 8;
-            this.button4.Text = " Trenerzy";
-            this.button4.UseVisualStyleBackColor = true;
+            this.home1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
+            this.home1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.home1.Location = new System.Drawing.Point(225, 112);
+            this.home1.Name = "home1";
+            this.home1.Size = new System.Drawing.Size(928, 474);
+            this.home1.TabIndex = 5;
             // 
-            // button5
+            // oNas1
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 316);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(225, 45);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "  Karnety";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 529);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(225, 45);
-            this.button6.TabIndex = 10;
-            this.button6.Text = " O nas";
-            this.button6.UseVisualStyleBackColor = true;
+            this.oNas1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
+            this.oNas1.Location = new System.Drawing.Point(225, 112);
+            this.oNas1.Name = "oNas1";
+            this.oNas1.Size = new System.Drawing.Size(928, 471);
+            this.oNas1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 586);
+            this.Controls.Add(this.oNas1);
+            this.Controls.Add(this.home1);
+            this.Controls.Add(this.Exit);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Strzelnica";
@@ -187,6 +242,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -195,13 +251,17 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button KarnetyButton;
+        private System.Windows.Forms.Button TrenerzyButton;
+        private System.Windows.Forms.Button StanowiskaButton;
+        private System.Windows.Forms.Button BronieButton;
+        private System.Windows.Forms.Button ONasButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Exit;
+        private Home home1;
+        private ONas oNas1;
     }
 }
 
