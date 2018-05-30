@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bronie));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -85,7 +86,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 242);
             this.panel1.TabIndex = 1;
+            this.panel1.Click += new System.EventHandler(this.panel1_click);
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -98,14 +110,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Broń #1";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(24, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(154, 162);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
@@ -115,12 +119,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 242);
             this.panel2.TabIndex = 2;
+            this.panel2.Click += new System.EventHandler(this.panel2_click);
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(24, 17);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -133,7 +140,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Broń #1";
+            this.label2.Text = "Broń #2";
             // 
             // panel3
             // 
@@ -144,12 +151,15 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 242);
             this.panel3.TabIndex = 3;
+            this.panel3.Click += new System.EventHandler(this.panel3_click);
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(24, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
@@ -162,7 +172,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Broń #1";
+            this.label3.Text = "Broń #3";
             // 
             // panel4
             // 
@@ -173,12 +183,15 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 242);
             this.panel4.TabIndex = 6;
+            this.panel4.Click += new System.EventHandler(this.panel6_click);
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(24, 17);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
             // 
@@ -191,7 +204,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 25);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Broń #1";
+            this.label4.Text = "Broń #6";
             // 
             // panel5
             // 
@@ -202,12 +215,15 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 242);
             this.panel5.TabIndex = 5;
+            this.panel5.Click += new System.EventHandler(this.panel5_click);
             // 
             // pictureBox5
             // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(24, 17);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
@@ -220,7 +236,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 25);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Broń #1";
+            this.label5.Text = "Broń #5";
             // 
             // panel6
             // 
@@ -231,12 +247,15 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 242);
             this.panel6.TabIndex = 4;
+            this.panel6.Click += new System.EventHandler(this.panel4_click);
             // 
             // pictureBox6
             // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(24, 17);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
             // 
@@ -249,7 +268,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(103, 25);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Broń #1";
+            this.label6.Text = "Broń #4";
             // 
             // panel7
             // 
@@ -260,12 +279,15 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 242);
             this.panel7.TabIndex = 9;
+            this.panel7.Click += new System.EventHandler(this.panel9_click);
             // 
             // pictureBox7
             // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(24, 17);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
             // 
@@ -289,12 +311,15 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 242);
             this.panel8.TabIndex = 8;
+            this.panel8.Click += new System.EventHandler(this.panel8_click);
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(24, 17);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 1;
             this.pictureBox8.TabStop = false;
             // 
@@ -318,12 +343,15 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 242);
             this.panel9.TabIndex = 7;
+            this.panel9.Click += new System.EventHandler(this.panel7_click);
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(24, 17);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(154, 162);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             // 
@@ -366,7 +394,7 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel1);
             this.Name = "Bronie";
-            this.Size = new System.Drawing.Size(873, 1046);
+            this.Size = new System.Drawing.Size(861, 1385);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
