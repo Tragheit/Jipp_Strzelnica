@@ -99,6 +99,12 @@
     <Compile Include="Karnety.Designer.cs">
       <DependentUpon>Karnety.cs</DependentUpon>
     </Compile>
+    <Compile Include="Karnet_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Karnet_popup.Designer.cs">
+      <DependentUpon>Karnet_popup.cs</DependentUpon>
+    </Compile>
     <Compile Include="ONas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Karnety.resx">
       <DependentUpon>Karnety.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karnet_popup.resx">
+      <DependentUpon>Karnet_popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ONas.resx">
       <DependentUpon>ONas.cs</DependentUpon>

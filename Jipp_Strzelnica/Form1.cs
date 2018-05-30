@@ -38,18 +38,24 @@ namespace Jipp_Strzelnica
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
             player.Play();
+
+            //stanowiska1.BringToFront();
         }
 
         private void TrenerzyButton_Click(object sender, EventArgs e)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
             player.Play();
+
+            //trenerzy1.BringToFront();
         }
 
         private void KarnetyButton_Click(object sender, EventArgs e)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
             player.Play();
+
+            karnety1.BringToFront();
         }
 
         private void OnasButton_Click(object sender, EventArgs e)

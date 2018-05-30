@@ -44,6 +44,7 @@
             this.home1 = new Jipp_Strzelnica.Home();
             this.oNas1 = new Jipp_Strzelnica.ONas();
             this.bronie1 = new Jipp_Strzelnica.Bronie();
+            this.karnety1 = new Jipp_Strzelnica.Karnety();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -224,6 +225,7 @@
             // 
             // bronie1
             // 
+            this.bronie1.AutoScroll = true;
             this.bronie1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
             this.bronie1.Location = new System.Drawing.Point(225, 112);
             this.bronie1.Name = "bronie1";
@@ -231,11 +233,21 @@
             this.bronie1.TabIndex = 7;
             this.bronie1.Load += new System.EventHandler(this.bronie1_Load);
             // 
+            // karnety1
+            // 
+            this.karnety1.AutoScroll = true;
+            this.karnety1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
+            this.karnety1.Location = new System.Drawing.Point(225, 112);
+            this.karnety1.Name = "karnety1";
+            this.karnety1.Size = new System.Drawing.Size(928, 474);
+            this.karnety1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 586);
+            this.Controls.Add(this.karnety1);
             this.Controls.Add(this.bronie1);
             this.Controls.Add(this.oNas1);
             this.Controls.Add(this.home1);
@@ -274,6 +286,7 @@
         private Home home1;
         private ONas oNas1;
         private Bronie bronie1;
+        private Karnety karnety1;
     }
 }
 
