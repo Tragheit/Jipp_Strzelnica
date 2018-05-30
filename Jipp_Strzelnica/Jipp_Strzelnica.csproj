@@ -131,8 +131,32 @@
     <Compile Include="sp_helpdiagrams_Result.cs">
       <DependentUpon>Baza.tt</DependentUpon>
     </Compile>
+    <Compile Include="Stanowiska.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Stanowiska.Designer.cs">
+      <DependentUpon>Stanowiska.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stanowiska_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stanowiska_popup.Designer.cs">
+      <DependentUpon>Stanowiska_popup.cs</DependentUpon>
+    </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Baza.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Trenerzy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Trenerzy.Designer.cs">
+      <DependentUpon>Trenerzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trener_popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trener_popup.Designer.cs">
+      <DependentUpon>Trener_popup.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Bronie.resx">
       <DependentUpon>Bronie.cs</DependentUpon>
@@ -164,6 +188,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Stanowiska.resx">
+      <DependentUpon>Stanowiska.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stanowiska_popup.resx">
+      <DependentUpon>Stanowiska_popup.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Baza.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Baza.Designer.cs</LastGenOutput>

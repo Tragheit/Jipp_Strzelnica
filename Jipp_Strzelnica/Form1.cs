@@ -39,7 +39,7 @@ namespace Jipp_Strzelnica
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
             player.Play();
 
-            //stanowiska1.BringToFront();
+            stanowiska1.BringToFront();
         }
 
         private void TrenerzyButton_Click(object sender, EventArgs e)
