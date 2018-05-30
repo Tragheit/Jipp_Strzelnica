@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="JippProjModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'JippProj.dbo.Opis_Bron' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Opis_Bron">
+          <Property Name="Id" Type="int" />
+          <Property Name="Producent" Type="varchar" MaxLength="30" />
+          <Property Name="Model" Type="varchar" MaxLength="30" />
+          <Property Name="Kaliber" Type="varchar" MaxLength="20" />
+          <Property Name="Typ" Type="varchar" MaxLength="30" />
+          <Property Name="Opis" Type="varchar" MaxLength="200" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'JippProj.dbo.Opis_Karnety' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Opis_Karnety">
+          <Property Name="ID" Type="int" />
+          <Property Name="Ulga" Type="varchar" MaxLength="10" />
+          <Property Name="Opis" Type="varchar" MaxLength="200" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'JippProj.dbo.Opis_Stanowiska' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Opis_Stanowiska">
+          <Property Name="ID" Type="int" />
+          <Property Name="Kulochwyt" Type="varchar" MaxLength="30" />
+          <Property Name="Odleglosc_tarcz" Type="int" />
+          <Property Name="Opis" Type="varchar" MaxLength="200" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'JippProj.dbo.Opis_Trenerzy' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Opis_Trenerzy">
+          <Property Name="ID" Type="int" />
+          <Property Name="Imie" Type="varchar" MaxLength="20" />
+          <Property Name="Nazwisko" Type="varchar" MaxLength="30" />
+          <Property Name="Opis" Type="varchar" MaxLength="200" />
+        </EntityType>-->
+        <EntityContainer Name="JippProjModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JippProjModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="JippProjEntities" annotation:LazyLoadingEnabled="true" />
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JippProjModelStoreContainer" CdmEntityContainer="JippProjEntities" />
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

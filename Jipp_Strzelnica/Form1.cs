@@ -30,6 +30,8 @@ namespace Jipp_Strzelnica
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\rrble\source\repos\Jipp_Strzelnica\Sounds\GunSound.wav");
             player.Play();
+
+            bronie1.BringToFront();
         }
 
         private void StanowiskaButton_Click(object sender, EventArgs e)
@@ -67,6 +69,11 @@ namespace Jipp_Strzelnica
         private void Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bronie1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

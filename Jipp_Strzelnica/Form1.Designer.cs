@@ -43,6 +43,7 @@
             this.Exit = new System.Windows.Forms.Button();
             this.home1 = new Jipp_Strzelnica.Home();
             this.oNas1 = new Jipp_Strzelnica.ONas();
+            this.bronie1 = new Jipp_Strzelnica.Bronie();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -221,11 +222,21 @@
             this.oNas1.Size = new System.Drawing.Size(928, 471);
             this.oNas1.TabIndex = 6;
             // 
+            // bronie1
+            // 
+            this.bronie1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
+            this.bronie1.Location = new System.Drawing.Point(225, 112);
+            this.bronie1.Name = "bronie1";
+            this.bronie1.Size = new System.Drawing.Size(928, 471);
+            this.bronie1.TabIndex = 7;
+            this.bronie1.Load += new System.EventHandler(this.bronie1_Load);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 586);
+            this.Controls.Add(this.bronie1);
             this.Controls.Add(this.oNas1);
             this.Controls.Add(this.home1);
             this.Controls.Add(this.Exit);
@@ -262,6 +273,7 @@
         private System.Windows.Forms.Button Exit;
         private Home home1;
         private ONas oNas1;
+        private Bronie bronie1;
     }
 }
 

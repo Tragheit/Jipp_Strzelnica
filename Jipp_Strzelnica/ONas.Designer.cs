@@ -94,7 +94,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 20F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.label4.Location = new System.Drawing.Point(541, 319);
+            this.label4.Location = new System.Drawing.Point(520, 319);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 45);
             this.label4.TabIndex = 9;
@@ -105,7 +105,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.label5.Location = new System.Drawing.Point(544, 364);
+            this.label5.Location = new System.Drawing.Point(523, 364);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(204, 33);
             this.label5.TabIndex = 10;
@@ -116,7 +116,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("Bahnschrift", 10F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.label6.Location = new System.Drawing.Point(544, 383);
+            this.label6.Location = new System.Drawing.Point(523, 383);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(204, 33);
             this.label6.TabIndex = 11;
@@ -127,7 +127,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(477, 319);
+            this.pictureBox1.Location = new System.Drawing.Point(456, 319);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(58, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
