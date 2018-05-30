@@ -16,5 +16,16 @@ namespace Jipp_Strzelnica
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        private void Exit_click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

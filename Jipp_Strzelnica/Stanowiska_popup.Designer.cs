@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,10 +45,9 @@
             this.tableLayoutPanel1.ColumnCount = 5;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.536586F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 91.46342F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 13F));
-            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 2, 1);
@@ -71,22 +69,12 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(437, 262);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.label6.Location = new System.Drawing.Point(3, 246);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(8, 16);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "label2";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.label2.Location = new System.Drawing.Point(17, 19);
+            this.label2.Location = new System.Drawing.Point(19, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 25);
             this.label2.TabIndex = 4;
@@ -97,7 +85,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.label1.Location = new System.Drawing.Point(17, 119);
+            this.label1.Location = new System.Drawing.Point(19, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 5;
@@ -108,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.label3.Location = new System.Drawing.Point(167, 19);
+            this.label3.Location = new System.Drawing.Point(195, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 25);
             this.label3.TabIndex = 6;
@@ -118,7 +106,7 @@
             // 
             this.SPlab1.AutoSize = true;
             this.SPlab1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.SPlab1.Location = new System.Drawing.Point(17, 50);
+            this.SPlab1.Location = new System.Drawing.Point(19, 50);
             this.SPlab1.Name = "SPlab1";
             this.SPlab1.Size = new System.Drawing.Size(46, 17);
             this.SPlab1.TabIndex = 8;
@@ -128,7 +116,7 @@
             // 
             this.SPlab2.AutoSize = true;
             this.SPlab2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.SPlab2.Location = new System.Drawing.Point(17, 149);
+            this.SPlab2.Location = new System.Drawing.Point(19, 149);
             this.SPlab2.Name = "SPlab2";
             this.SPlab2.Size = new System.Drawing.Size(46, 17);
             this.SPlab2.TabIndex = 9;
@@ -139,10 +127,10 @@
             this.SPlab3.AutoSize = true;
             this.SPlab3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SPlab3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.SPlab3.Location = new System.Drawing.Point(167, 50);
+            this.SPlab3.Location = new System.Drawing.Point(195, 50);
             this.SPlab3.Name = "SPlab3";
             this.tableLayoutPanel1.SetRowSpan(this.SPlab3, 3);
-            this.SPlab3.Size = new System.Drawing.Size(147, 171);
+            this.SPlab3.Size = new System.Drawing.Size(134, 171);
             this.SPlab3.TabIndex = 10;
             this.SPlab3.Text = "label2";
             // 
@@ -152,7 +140,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(215)))), ((int)(((byte)(152)))));
-            this.button1.Location = new System.Drawing.Point(338, 182);
+            this.button1.Location = new System.Drawing.Point(337, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 36);
             this.button1.TabIndex = 12;
@@ -183,7 +171,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label SPlab1;
-        public System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label SPlab2;
         public System.Windows.Forms.Label SPlab3;
         private System.Windows.Forms.Button button1;

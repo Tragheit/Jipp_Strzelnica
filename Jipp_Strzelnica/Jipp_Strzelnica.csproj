@@ -194,6 +194,12 @@
     <EmbeddedResource Include="Stanowiska_popup.resx">
       <DependentUpon>Stanowiska_popup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Trenerzy.resx">
+      <DependentUpon>Trenerzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trener_popup.resx">
+      <DependentUpon>Trener_popup.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Baza.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Baza.Designer.cs</LastGenOutput>

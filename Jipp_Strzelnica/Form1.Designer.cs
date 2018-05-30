@@ -41,11 +41,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Button();
+            this.stanowiska1 = new Jipp_Strzelnica.Stanowiska();
             this.karnety1 = new Jipp_Strzelnica.Karnety();
             this.bronie1 = new Jipp_Strzelnica.Bronie();
             this.oNas1 = new Jipp_Strzelnica.ONas();
             this.home1 = new Jipp_Strzelnica.Home();
-            this.stanowiska1 = new Jipp_Strzelnica.Stanowiska();
+            this.trenerzy1 = new Jipp_Strzelnica.Trenerzy();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -207,6 +208,15 @@
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // stanowiska1
+            // 
+            this.stanowiska1.AutoScroll = true;
+            this.stanowiska1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
+            this.stanowiska1.Location = new System.Drawing.Point(225, 112);
+            this.stanowiska1.Name = "stanowiska1";
+            this.stanowiska1.Size = new System.Drawing.Size(928, 474);
+            this.stanowiska1.TabIndex = 9;
+            // 
             // karnety1
             // 
             this.karnety1.AutoScroll = true;
@@ -243,20 +253,20 @@
             this.home1.Size = new System.Drawing.Size(928, 474);
             this.home1.TabIndex = 5;
             // 
-            // stanowiska1
+            // trenerzy1
             // 
-            this.stanowiska1.AutoScroll = true;
-            this.stanowiska1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
-            this.stanowiska1.Location = new System.Drawing.Point(225, 112);
-            this.stanowiska1.Name = "stanowiska1";
-            this.stanowiska1.Size = new System.Drawing.Size(928, 474);
-            this.stanowiska1.TabIndex = 9;
+            this.trenerzy1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(86)))), ((int)(((byte)(69)))));
+            this.trenerzy1.Location = new System.Drawing.Point(225, 112);
+            this.trenerzy1.Name = "trenerzy1";
+            this.trenerzy1.Size = new System.Drawing.Size(928, 474);
+            this.trenerzy1.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 586);
+            this.Controls.Add(this.trenerzy1);
             this.Controls.Add(this.stanowiska1);
             this.Controls.Add(this.karnety1);
             this.Controls.Add(this.bronie1);
@@ -299,6 +309,7 @@
         private Bronie bronie1;
         private Karnety karnety1;
         private Stanowiska stanowiska1;
+        private Trenerzy trenerzy1;
     }
 }
 
